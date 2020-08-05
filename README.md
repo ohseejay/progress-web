@@ -14,7 +14,7 @@ Edit the `people.html` file. If you are new to the lab, add a new entry with the
 <!-- [Comment with lab member name, for code organization only.] -->
 <div class="col-3 col-6-medium col-12-small person">
     <section class="box">
-        <div class="image featured"><img src="images/headshots/[IMG_NAME]" alt="images/headshots/fetch.jpg" /></div>
+        <div class="image featured"><img src="images/headshots/[IMG_NAME]" /></div>
         <header>
             <h3><a href="[PERSONAL WEBSITE ADDRESS]">[LAB MEMBER FULL NAME]</a></h3>
             <p>[ROLE], [DEPARTMENT]</p>
