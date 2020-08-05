@@ -1,0 +1,163 @@
+@inproceedings{Zeng2018a,
+abstract = {We present the Semantic Robot Programming (SRP) paradigm as a convergence of robot programming by demonstration and semantic mapping. In SRP, a user can directly program a robot manipulator by demonstrating a snapshot of their intended goal scene in workspace. The robot then parses this goal as a scene graph comprised of object poses and inter-object relations, assuming known object geometries. Task and motion planning is then used to realize the user's goal from an arbitrary initial scene configuration. Even when faced with different initial scene configurations, SRP enables the robot to seamlessly adapt to reach the user's demonstrated goal. For scene perception, we propose the Discriminatively-Informed Generative Estimation of Scenes and Transforms (DIGEST) method to infer the initial and goal states of the world from RGBD images. The efficacy of SRP with DIGEST perception is demonstrated for the task of tray-setting with a Michigan Progress Fetch robot. Scene perception and task execution are evaluated with a public household occlusion dataset and our cluttered scene dataset.},
+archivePrefix = {arXiv},
+arxivId = {1704.01189},
+author = {Zeng, Zhen and Zhou, Zheming and Sui, Zhiqiang and Jenkins, Odest Chadwicke},
+booktitle = {IEEE International Conference on Robotics and Automation},
+doi = {10.1109/ICRA.2018.8460538},
+eprint = {1704.01189},
+isbn = {9781538630815},
+issn = {10504729},
+pages = {7462--7469},
+title = {Semantic Robot Programming for Goal-Directed Manipulation in Cluttered Scenes},
+year = {2018},
+webpage = {projects/project_template.html}
+}
+
+@inproceedings{Chen2019,
+abstract = {Recent advancements have led to a proliferation of machine learning systems used to assist humans in a wide range of tasks. However, we are still far from accurate, reliable, and resource-efficient operations of these systems. For robot perception, convolutional neural networks (CNNs) for object detection and pose estimation are recently coming into widespread use. However, neural networks are known to suffer from overfitting during the training process and are less robust under unforeseen conditions (which makes them especially vulnerable to adversarial scenarios). In this work, we propose Generative Robust Inference and Perception (GRIP) as a two-stage object detection and pose estimation system that aims to combine the relative strengths of discriminative CNNs and generative inference methods to achieve robust estimation. Our results show that a second stage of sample-based generative inference is able to recover from false object detections by CNNs, and produce robust estimations in adversarial conditions. We demonstrate the efficacy of GRIP robustness through comparison with state-of-the-art learning-based pose estimators and pick-and-place manipulation in dark and cluttered environments.},
+archivePrefix = {arXiv},
+arxivId = {1903.08352},
+author = {Chen, Xiaotong and Chen, Rui and Sui, Zhiqiang and Ye, Zhefan and Liu, Yanqi and Bahar, R Iris and Jenkins, Odest Chadwicke},
+booktitle = {International Conference on Intelligent Robots and Systems (IROS)},
+doi = {10.1109/IROS40897.2019.8967983},
+eprint = {1903.08352},
+isbn = {9781728140049},
+issn = {21530866},
+pages = {3988--3995},
+title = {{GRIP}: Generative Robust Inference and Perception for Semantic Robot Manipulation in Adversarial Environments},
+year = {2019}
+}
+
+@inproceedings{French2019,
+abstract = {Robotic Learning from Demonstration (LfD) allows anyone, not just experts, to program a robot for an arbitrary task. Many LfD methods focus on low level primitive actions such as manipulator trajectories. Complex multistep task with many primitive actions must be learned from demonstration if LfD is to encompass the full range of task a user may desire. Existing methods represent the high level task in various forms including, finite state machines, decision trees, formal logic, among others. Behavior trees are proposed as an alternative representation of high level task. Behavior trees are an execution model for the control of a robot designed for real time execution, modularity, and, consequently, transparency. Real time execution allows the robot to reactively perform the task. Modularity allows the reuse of learned primitive actions and high level task in new situations, speeding up the process of learning in new scenarios. Transparency allows users to understand and interactively modify the learned model. Behavior trees are used to represent high level tasks by building on the relationship it has with decision trees. We demonstrate a human teaching our Fetch robot a household cleaning task.},
+author = {French, Kevin and Wu, Shiyu and Pan, Tianyang and Zhou, Zheming and Jenkins, Odest Chadwicke},
+booktitle = {Proceedings - IEEE International Conference on Robotics and Automation},
+doi = {10.1109/ICRA.2019.8794104},
+isbn = {9781538660263},
+issn = {10504729},
+month = {may},
+pages = {7791--7797},
+publisher = {Institute of Electrical and Electronics Engineers Inc.},
+title = {{Learning behavior trees from demonstration}},
+volume = {2019-May},
+year = {2019}
+}
+
+@inproceedings{Zhou2019,
+abstract = {Transparent objects are prevalent across many environments of interest for dexterous robotic manipulation. Such transparent material leads to considerable uncertainty for robot perception and manipulation, and remains an open challenge for robotics. This problem is exacerbated when multiple transparent objects cluster into piles of clutter. In household environments, for example, it is common to encounter piles of glassware in kitchens, dining rooms, and reception areas, which are essentially invisible to modern robots. We present the GlassLoc algorithm for grasp pose detection of transparent objects in transparent clutter using plenoptic sensing. GlassLoc classifies graspable locations in space informed by a Depth Likelihood Volume (DLV) descriptor. We extend the DLV to infer the occupancy of transparent objects over a given space from multiple plenoptic viewpoints. We demonstrate and evaluate the GlassLoc algorithm on a Michigan Progress Fetch mounted with a first generation Lytro. The effectiveness of our algorithm is evaluated through experiments for grasp detection and execution with a variety of transparent glassware in minor clutter.},
+archivePrefix = {arXiv},
+arxivId = {1909.04269},
+author = {Zhou, Zheming and Pan, Tianyang and Wu, Shiyu and Chang, Haonan and Jenkins, Odest Chadwicke},
+booktitle = {International Conference on Intelligent Robots and Systems (IROS)},
+doi = {10.1109/IROS40897.2019.8967685},
+eprint = {1909.04269},
+isbn = {9781728140049},
+issn = {21530866},
+pages = {4776--4783},
+title = {{GlassLoc: Plenoptic Grasp Pose Detection in Transparent Clutter}},
+year = {2019}
+}
+
+@article{Zhou2020,
+abstract = {Translucency is prevalent in everyday scenes. As such, perception of transparent objects is essential for robots to perform manipulation. Compared with texture-rich or texture-less Lambertian objects, transparency induces significant uncertainty on object appearances. Ambiguity can be due to changes in lighting, viewpoint, and backgrounds, each of which brings challenges to existing object pose estimation algorithms. In this work, we propose LIT, a two-stage method for transparent object pose estimation using light-field sensing and photorealistic rendering. LIT employs multiple filters specific to light-field imagery in deep networks to capture transparent material properties, with robust depth and pose estimators based on generative sampling. Along with the LIT algorithm, we introduce the light-field transparent object dataset ProLIT for the tasks of recognition, localization and pose estimation. With respect to this ProLIT dataset, we demonstrate that LIT can outperform both state-of-the-art end-to-end pose estimation methods and a generative pose estimator on transparent objects.},
+archivePrefix = {arXiv},
+arxivId = {1910.00721},
+author = {Zhou, Zheming and Chen, Xiaotong and Jenkins, Odest Chadwicke},
+doi = {10.1109/lra.2020.3001499},
+eprint = {1910.00721},
+journal = {Robotics and Automation Letters},
+pages = {1--1},
+title = {{LIT}: Light-field Inference of Transparency for Refractive Object Localization},
+url = {https://www.researchgate.net/publication/336230614},
+year = {2020}
+}
+
+@inproceedings{Sui2017,
+abstract = {In order to perform autonomous sequential manipulation tasks, perception in cluttered scenes remains a critical challenge for robots. In this paper, we propose a probabilistic approach for robust sequential scene estimation and manipulation - Sequential Scene Understanding and Manipulation (SUM). SUM considers uncertainty due to discriminative object detection and recognition in the generative estimation of the most likely object poses maintained over time to achieve a robust estimation of the scene under heavy occlusions and unstructured environment. Our method utilizes candidates from discriminative object detector and recognizer to guide the generative process of sampling scene hypothesis, and each scene hypotheses is evaluated against the observations. Also SUM maintains beliefs of scene hypothesis over robot physical actions for better estimation and against noisy detections. We conduct extensive experiments to show that our approach is able to perform robust estimation and manipulation.},
+archivePrefix = {arXiv},
+arxivId = {1703.07491},
+author = {Sui, Zhiqiang and Zhou, Zheming and Zeng, Zhen and Jenkins, Odest Chadwicke},
+booktitle = {IEEE International Conference on Intelligent Robots and Systems},
+doi = {10.1109/IROS.2017.8206164},
+eprint = {1703.07491},
+isbn = {9781538626825},
+issn = {21530866},
+pages = {3281--3288},
+title = {{SUM: Sequential scene understanding and manipulation}},
+volume = {2017-Septe},
+year = {2017}
+}
+
+@inproceedings{Zeng2018,
+abstract = {We present a filtering-based method for semantic mapping to simultaneously detect objects and localize their 6 degree-of-freedom pose. For our method, called Contextual Temporal Mapping (or CT-Map), we represent the semantic map as a belief over object classes and poses across an observed scene. Inference for the semantic mapping problem is then modeled in the form of a Conditional Random Field (CRF). CT-Map is a CRF that considers two forms of relationship potentials to account for contextual relations between objects and temporal consistency of object poses, as well as a measurement potential on observations. A particle filtering algorithm is then proposed to perform inference in the CT-Map model. We demonstrate the efficacy of the CT-Map method with a Michigan Progress Fetch robot equipped with a RGB-D sensor. Our results demonstrate that the particle filtering based inference of CT-Map provides improved object detection and pose estimation with respect to baseline methods that treat observations as independent samples of a scene.},
+archivePrefix = {arXiv},
+arxivId = {1810.11525v1},
+author = {Zeng, Zhen and Zhou, Yunwen and Chadwicke, Odest and Desingh, Jenkins Karthik and Jenkins, Odest Chadwicke and Desingh, Karthik},
+booktitle = {International Conference on Intelligent Robots and Systems (IROS)},
+doi = {10.1109/IROS.2018.8594205},
+eprint = {1810.11525v1},
+isbn = {9781538680940},
+issn = {21530866},
+pages = {911--918},
+title = {{Semantic Mapping with Simultaneous Object Detection and Localization}},
+url = {https://arxiv.org/pdf/1810.11525.pdf},
+year = {2018}
+}
+
+@inproceedings{Sui2015,
+abstract = {Manipulation tasks involving sequential pick-and-place actions in human environments remains an open problem for robotics. Central to this problem is the inability for robots to perceive in cluttered environments, where objects are physically touching, stacked, or occluded from the view. Such physical interactions currently prevent robots from distinguishing individual objects such that goal-directed reasoning over sequences of pick-and-place actions can be performed. Addressing this problem, we introduce the Axiomatic Particle Filter (APF) as a method for axiomatic state estimation to simultaneously perceive objects in clutter and perform sequential reasoning for manipulation. The APF estimates state as a scene graph, consisting of symbolic spatial relations between objects in the robot's world. Assuming known object geometries, the APF is able to infer a distribution over possible scene graphs of the robot's world and produce the maximally likely state estimate of each object's pose and spatial relationships between objects. We present experimental results using the APF to infer scene graphs from depth images of scenes with objects that are touching, stacked, and occluded.},
+author = {Sui, Zhiqiang and Jenkins, Odest Chadwicke and Desingh, Karthik},
+booktitle = {IEEE International Conference on Intelligent Robots and Systems},
+doi = {10.1109/IROS.2015.7354006},
+isbn = {9781479999941},
+issn = {21530866},
+pages = {4429--4436},
+title = {{Axiomatic particle filtering for goal-directed robotic manipulation}},
+url = {http://www-personal.umich.edu/{~}zsui/zsui{\_}iros2015.pdf},
+volume = {2015-Decem},
+year = {2015}
+}
+
+@inproceedings{Desingh2018,
+abstract = {Robots working in human environments often encounter a wide range of articulated objects, such as tools, cabinets, and other jointed objects. Such articulated objects can take an infinite number of possible poses, as a point in a potentially high-dimensional continuous space. A robot must perceive this continuous pose to manipulate the object to a desired pose. This problem of perception and manipulation of articulated objects remains a challenge due to its high dimensionality and multi-modal uncertainty. In this paper, we propose a factored approach to estimate the poses of articulated objects using an efficient nonparametric belief propagation algorithm. We consider inputs as geometrical models with articulation constraints, and observed RGBD sensor data. The proposed framework produces object-part pose beliefs iteratively. The problem is formulated as a pairwise Markov Random Field (MRF) where each hidden node (continuous pose variable) is an observed object-part's pose and the edges denote the articulation constraints between the parts. We propose articulated pose estimation by Pull Message Passing algorithm for Nonparametric Belief Propagation (PMPNBP) and evaluate its convergence properties over scenes with articulated objects.},
+archivePrefix = {arXiv},
+arxivId = {1812.03647},
+author = {Desingh, Karthik and Lu, Shiyang and Opipari, Anthony and Jenkins, Odest Chadwicke},
+booktitle = {International Conference on Robotics and Automation (ICRA)},
+eprint = {1812.03647},
+title = {{Factored Pose Estimation of Articulated Objects using Efficient Nonparametric Belief Propagation}},
+url = {https://arxiv.org/pdf/1812.03647.pdf},
+year = {2019}
+}
+
+@inproceedings{Zeng2020,
+abstract = {We aim for mobile robots to function in a variety of common human environments. Such robots need to be able to reason about the locations of previously unseen target objects. Landmark objects can help this reasoning by narrowing down the search space significantly. More specifically, we can exploit background knowledge about common spatial relations between landmark and target objects. For example, seeing a table and knowing that cups can often be found on tables aids the discovery of a cup. Such correlations can be expressed as distributions over possible pairing relationships of objects. In this paper, we propose an active visual object search strategy method through our introduction of the Semantic Linking Maps (SLiM) model. SLiM simultaneously maintains the belief over a target object's location as well as landmark objects' locations, while accounting for probabilistic inter-object spatial relations. Based on SLiM, we describe a hybrid search strategy that selects the next best view pose for searching for the target object based on the maintained belief. We demonstrate the efficiency of our SLiM-based search strategy through comparative experiments in simulated environments. We further demonstrate the real-world applicability of SLiM-based search in scenarios with a Fetch mobile manipulation robot.},
+author = {Zeng, Zhen and Adrian, Rofer and Jenkins, Odest Chadwicke},
+booktitle = {IEEE International Conference on Robotics and Automation},
+title = {Semantic Linking Maps for Active Visual Object Search},
+year = {2020}
+}
+
+@article{Sui2020,
+abstract = {We propose GeoFusion, a SLAM-based scene estimation method for building an object-level semantic map in dense clutter. In dense clutter, objects are often in close contact and severe occlusions, which brings more false detections and noisy pose estimates from existing perception methods. To solve these problems, our key insight is to consider geometric consistency at the object level within a general SLAM framework. The geometric consistency is defined in two parts: geometric consistency score and geometric relation. The geometric consistency score describes the compatibility between object geometry model and observation point cloud. Meanwhile it provides a reliable measure to filter out false positives in data association. The geometric relation represents the relationship (e.g. contact) between geometric features (e.g. planes) among objects. The geometric relation makes the graph optimization for poses more robust and accurate. GeoFusion can robustly and efficiently infer the object labels, 6D object poses and spatial relations from continutous noisy semantic measurements. We quantitatively evaluate our method using observations from a Fetch mobile manipulation robot. Our results demonstrate greater robustness against false estimates than frame-by-frame pose estimation from the state-of-the-art convolutional neural network.},
+archivePrefix = {arXiv},
+arxivId = {2003.12610},
+author = {Sui, Zhiqiang and Chang, Haonan and Xu, Ning and Jenkins, Odest Chadwicke},
+eprint = {2003.12610},
+journal = {Robotics and Automation Letters},
+title = {{GeoFusion}: Geometric Consistency informed Scene Estimation in Dense Clutter},
+url = {http://arxiv.org/abs/2003.12610},
+year = {2020}
+}
+
+@inproceedings{pavlasek2020parts,
+  author = {Pavlasek, Jana and Lewis, Stanley and Desingh, Karthik and Jenkins, Odest Chadwicke},
+  title = {Parts-Based Articulated Object Localization in Clutter Using Belief Propagation},
+  booktitle = {International Conference on Intelligent Robots and Systems (IROS)},
+  year = {2020},
+  organization={IEEE},
+  webpage={projects/tool_parts},
+  url={projects/tool_parts},
+  video={https://youtu.be/qwIuUwkwykI}
+}
