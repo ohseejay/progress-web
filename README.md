@@ -41,7 +41,9 @@ Fill out the sections in the square brackets only, don't edit anything outside t
 
 ### Publications
 
-When you publish a new paper, please add it to the Bibtex file, `bib/progress.bib`. Make sure the format of the Bibtex is correct. The corresponding HTML is generated using [`bibtex2html`](https://www.lri.fr/~filliatr/bibtex2html/), with the following script:
+When you publish a new paper, please add it to the Bibtex file, `bib/progress.bib`. Make sure the format of the Bibtex is correct. Use the pre-defined strings for conference and journal names.
+
+The corresponding HTML is generated using [`bibtex2html`](https://www.lri.fr/~filliatr/bibtex2html/), with the following script:
 
 ```bash
 ./scripts/gen_pubs
@@ -52,6 +54,7 @@ The following fields can be added to the Bibtex to create links associated with 
 * `url`: Link to the paper PDF.
 * `webpage`: Link to the project webpage.
 * `video`: Link to the video.
+* `note`: Additional notes, like "Best paper award."
 
 ## Project Pages
 
