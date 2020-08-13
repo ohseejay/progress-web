@@ -1548,18 +1548,6 @@ input, select, textarea {
 			margin: -4.5em 0 4.25em -3.5em;
 		}
 
-		.person .box {
-			padding: 1.25em;
-		}
-
-		.person .box .image.featured {
-			position: relative;
-			width: auto;
-			left: -1.25em;
-			top: -1.25em;
-			margin: 0 -2.5em 0 0;
-		}
-
 		.box .image.slideshow {
 			position: relative;
 			max-width: 90%;
@@ -1844,8 +1832,29 @@ ul.divided li:first-child {
 
 /* People */
 
+.person {
+	display: flex;
+}
+
+.person .box {
+	padding: 1.25em;
+	flex-grow: 1;
+}
+
+.person .box .image.featured {
+	position: relative;
+	width: auto;
+	left: -1.25em;
+	top: -1.25em;
+	margin: 0 -2.5em 0 0;
+}
+
 div.person a:hover {
 	color: #FFCB05;
+}
+
+div.person header p {
+	font-size: large;
 }
 
 /* Page Wrapper */
