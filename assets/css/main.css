@@ -1679,12 +1679,15 @@ input, select, textarea {
 /* Slideshow */
 
 .slideshow-container {
+	margin-bottom: 1em;
+}
+
+.image-slideshow-container {
 	max-width: 90%;
 	position: relative;
 	height: auto;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 1em;
 }
 
 .prev, .next {
