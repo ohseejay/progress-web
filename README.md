@@ -4,7 +4,7 @@ The `gh-pages` branch contains the web page to be displayed. This page will appe
 
 ## HOW-TO
 
-Members of the lab should regularly update their own information and publication info. Instructions below. Make a pull request to the `gh-pages` branch to update your info.
+Members of the lab should regularly update their own information and publication info. Instructions below. Fork the repo, then make a pull request to the `gh-pages` branch to update your info.
 
 ### Lab Member Info
 
@@ -41,7 +41,7 @@ Fill out the sections in the square brackets only, don't edit anything outside t
 
 ### Publications
 
-When you publish a new paper, please add it to the Bibtex file, `bib/progress.bib`. Make sure the format of the Bibtex is correct. Use the pre-defined strings for conference and journal names.
+When you publish a new paper, please add it to the Bibtex file, `bib/progress.bib`. Make sure the format of the Bibtex is correct. Use the pre-defined strings for conference and journal names. The entries will be automatically sorted by year. Within the year, the entries will be displayed in *reverse order* that they are listed in the file.
 
 The corresponding HTML is generated using [`bibtex2html`](https://www.lri.fr/~filliatr/bibtex2html/), with the following script:
 
