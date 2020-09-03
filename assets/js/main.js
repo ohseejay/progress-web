@@ -68,42 +68,46 @@ function carousel(n) {
 			}, 100);
 		});
 
-	// Dropdowns.
-		$('#nav > ul').dropotron({
-			mode: 'fade',
-			noOpenerFade: true,
-			alignment: 'center'
-		});
+    // Only if there is a nav element.
+    if (document.getElementById("nav"))
+    {
+        // Dropdowns.
+        $('#nav > ul').dropotron({
+            mode: 'fade',
+            noOpenerFade: true,
+            alignment: 'center'
+        });
 
-	// Nav.
+        // Nav.
 
-		// Title Bar.
-			$(
-				'<div id="titleBar">' +
-					'<a href="#navPanel" class="toggle"></a>' +
-				'</div>'
-			)
-				.appendTo($body);
+        // Title Bar.
+            $(
+                '<div id="titleBar">' +
+                    '<a href="#navPanel" class="toggle"></a>' +
+                '</div>'
+            )
+                .appendTo($body);
 
-		// Panel.
-			$(
-				'<div id="navPanel">' +
-					'<nav>' +
-						$('#nav').navList() +
-					'</nav>' +
-				'</div>'
-			)
-				.appendTo($body)
-				.panel({
-					delay: 500,
-					hideOnClick: true,
-					hideOnSwipe: true,
-					resetScroll: true,
-					resetForms: true,
-					side: 'left',
-					target: $body,
-					visibleClass: 'navPanel-visible'
-				});
+        // Panel.
+            $(
+                '<div id="navPanel">' +
+                    '<nav>' +
+                        $('#nav').navList() +
+                    '</nav>' +
+                '</div>'
+            )
+                .appendTo($body)
+                .panel({
+                    delay: 500,
+                    hideOnClick: true,
+                    hideOnSwipe: true,
+                    resetScroll: true,
+                    resetForms: true,
+                    side: 'left',
+                    target: $body,
+                    visibleClass: 'navPanel-visible'
+                });
+    }
 
 	carousel(slideIndex);
 
