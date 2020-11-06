@@ -1881,6 +1881,10 @@ div.person header p {
 			line-height: 1;
 		}
 
+		#header div.logo {
+			width: 35%;
+		}
+
 /* Nav */
 
 	#nav {
