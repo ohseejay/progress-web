@@ -2130,12 +2130,6 @@ div.person header p {
 	padding: 0 5em;
 }
 
-.image.pitch.centered img {
-    margin: 0 auto;
-    width: auto;
-    max-width: 70%;
-}
-
 .project a.paperlinks {
 	text-decoration: none;
 }
@@ -2143,6 +2137,33 @@ div.person header p {
 .project a.paperlinks:hover {
 	color: #5d5d5d;
 }
+
+.image.pitch.centered img {
+    margin: 0 auto;
+    width: auto;
+    max-width: 70%;
+}
+
+/* Experiment grid on project page. */
+
+.exp-grid {
+	margin-top: 0;
+}
+
+.exp-grid > * {
+	padding-top: 10px;
+}
+
+.col-title {
+	padding-top: 0;
+}
+
+.col-title p {
+	margin: 0;
+	text-align: center;
+}
+
+/* Citation on project page. */
 
 .citation pre code {
   background-color: #f7f7f7;
