@@ -2155,6 +2155,8 @@ div.person header p {
 }
 
 .col-title {
+	font-size: 85%;
+	font-weight: bold;
 	padding-top: 0;
 }
 
