@@ -91,32 +91,32 @@
 
                             <!-- ROW -->
                             <div class="col-12">
-                                <div class="image experiment">
+                                <div class="image experiment centered">
                                     <img src="images/exp/pendulum/5_percent.gif" alt="" />
                                 </div>
                             </div>
                             <div class="col-12">
-                                <div class="image experiment">
+                                <div class="image experiment centered">
                                     <img src="images/exp/pendulum/15_percent.gif" alt="" />
                                 </div>
                             </div>
                             <div class="col-12">
-                                <div class="image experiment">
+                                <div class="image experiment centered">
                                     <img src="images/exp/pendulum/25_percent.gif" alt="" />
                                 </div>
                             </div>
                             <div class="col-12">
-                                <div class="image experiment">
+                                <div class="image experiment centered">
                                     <img src="images/exp/pendulum/35_percent.gif" alt="" />
                                 </div>
                             </div>
                             <div class="col-12">
-                                <div class="image experiment">
+                                <div class="image experiment centered">
                                     <img src="images/exp/pendulum/45_percent.gif" alt="" />
                                 </div>
                             </div>
                             <div class="col-12">
-                                <div class="image experiment">
+                                <div class="image experiment centered">
                                     <img src="images/exp/pendulum/55_percent.gif" alt="" />
                                 </div>
                             </div>
@@ -161,37 +161,69 @@
                             </div>
 
                             <div class="col-12">
-                                <div class="image experiment">
+                                <div class="image experiment centered">
                                     <img src="images/exp/spider/5_percent.gif" alt="" />
                                 </div>
                             </div>
                             <div class="col-12">
-                                <div class="image experiment">
+                                <div class="image experiment centered">
                                     <img src="images/exp/spider/15_percent.gif" alt="" />
                                 </div>
                             </div>
                             <div class="col-12">
-                                <div class="image experiment">
+                                <div class="image experiment centered">
                                     <img src="images/exp/spider/25_percent.gif" alt="" />
                                 </div>
                             </div>
                             <div class="col-12">
-                                <div class="image experiment">
+                                <div class="image experiment centered">
                                     <img src="images/exp/spider/35_percent.gif" alt="" />
                                 </div>
                             </div>
                             <div class="col-12">
-                                <div class="image experiment">
+                                <div class="image experiment centered">
                                     <img src="images/exp/spider/45_percent.gif" alt="" />
                                 </div>
                             </div>
                             <div class="col-12">
-                                <div class="image experiment">
+                                <div class="image experiment centered">
                                     <img src="images/exp/spider/55_percent.gif" alt="" />
                                 </div>
                             </div>
 
                         </div>
+
+                        <br/>
+                        <h3>Entropy</h3>
+
+                        <p>A key benefit of DNBP is that it tracks <emph>belief</emph> over iterations. We can model the algorithm's uncertainty which tells us how much we should trust the estimate. Here is an illustration of the measured entropy in the estimate over iterations for an easy scene:</p>
+
+                        <div class="row aln-center exp-grid">
+                            <div class="col-12 col-title">
+                                <p>DNBP Entropy over Iterations</p>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="image experiment centered">
+                                    <img src="images/exp/entropy/no_occlusion.gif" alt="" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <p>Below, we add a significant occlusion to the observation. When the pendulum end effector is totally occluded, the entropy is high, demonstrating uncertainty in the estimate.</p>
+
+                        <div class="row aln-center exp-grid">
+                            <div class="col-12 col-title">
+                                <p>DNBP Entropy over Iterations</p>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="image experiment centered">
+                                    <img src="images/exp/entropy/occlusion.gif" alt="" />
+                                </div>
+                            </div>
+                        </div>
+
                     </article>
 
                     <article class="box post">
